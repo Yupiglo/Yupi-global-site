@@ -36,7 +36,7 @@ const NEWS_ITEMS = [
         title: "Partenariat stratégique pour l&apos;Innovation",
         date: "05 Janvier 2025",
         excerpt: "Signature d&apos;un accord majeur pour le déploiement de nouvelles technologies de santé.",
-        image: "/media/2025/08/DSC_2310.jpg",
+        image: "/media/2025/08/DSC_2310.webp",
         category: "Business"
     }
 ];
