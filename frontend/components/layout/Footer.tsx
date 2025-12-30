@@ -21,7 +21,7 @@ export default function Footer() {
           <div className="w-full lg:w-1/2">
             <Link href="/" className="inline-block mb-8 group">
               <Image
-                src="/logos/yupi-blanc.webp"
+                src="/logos/yupi-blanc.png"
                 alt="Yupi Global"
                 width={180}
                 height={60}
