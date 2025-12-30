@@ -12,7 +12,7 @@ const NEWS_ITEMS = [
         title: "Succès éclatant de la Convention de Cotonou",
         date: "25 Janvier 2025",
         excerpt: "Plus de 1000 partenaires se sont réunis pour découvrir la vision 2025 de Yupi Global.",
-        image: "/media/2025/08/20250125_190336.jpg",
+        image: "/media/2025/08/20250125_190336.webp",
         category: "Évènement"
     },
     {
@@ -20,7 +20,7 @@ const NEWS_ITEMS = [
         title: "Inauguration du nouveau siège au Bénin",
         date: "15 Janvier 2025",
         excerpt: "Un espace moderne dédié à l&apos;accompagnement de nos leaders et au développement de l&apos;excellence.",
-        image: "/media/2025/08/DSC_2321.jpg",
+        image: "/media/2025/08/DSC_2321.webp",
         category: "Corporate"
     },
     {
@@ -28,7 +28,7 @@ const NEWS_ITEMS = [
         title: "Impact Tour : Lomé accueille Yupi Global",
         date: "10 Janvier 2025",
         excerpt: "Retour sur la tournée de formation intensive qui a transformé la vie de centaines d&apos;entrepreneurs.",
-        image: "/media/2025/08/DSC_2290.jpg",
+        image: "/media/2025/08/DSC_2290.webp",
         category: "Formation"
     },
     {

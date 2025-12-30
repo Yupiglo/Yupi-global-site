@@ -55,7 +55,7 @@ export default function PortfolioPage() {
             {/* Main Featured Conference */}
             <div className="lg:col-span-8 group relative overflow-hidden rounded-2xl shadow-2xl h-[600px]">
               <Image
-                src="/media/2025/08/20250125_190336.jpg"
+                src="/media/2025/08/20250125_190336.webp"
                 alt="Conférence Janvier 2025"
                 className="object-cover grayscale-[0.3] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000"
                 fill
@@ -77,12 +77,12 @@ export default function PortfolioPage() {
                 {
                   title: "Leadership Summit 2024",
                   location: "Abidjan, Décembre 2024",
-                  image: "/media/2025/08/DSC_2321.jpg"
+                  image: "/media/2025/08/DSC_2321.webp"
                 },
                 {
                   title: "Wellness & Wealth Expo",
                   location: "Lomé, Octobre 2024",
-                  image: "/media/2025/08/DSC_2290.jpg"
+                  image: "/media/2025/08/DSC_2290.webp"
                 }
               ].map((conf, idx) => (
                 <div key={idx} className="group relative flex-1 rounded-2xl overflow-hidden border border-gray-100 shadow-xl min-h-[200px]">
