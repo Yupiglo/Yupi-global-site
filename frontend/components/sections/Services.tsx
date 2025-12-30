@@ -41,8 +41,8 @@ export default function Services() {
             description: t("Our team of experts and our global network accompany you step by step. By marrying high-level mentorship with collective intelligence, we help you achieve sustainable success.", "Notre équipe d'experts et notre réseau mondial vous accompagnent pas à pas. En mariant le mentorat de haut niveau à l'intelligence collective, nous vous aidons à atteindre une réussite durable."),
             trust: {
                 avatars: [
-                    "/media/services/avatar1.png",
-                    "/media/services/avatar2.png"
+                    "/media/services/avatar1.webp",
+                    "/media/services/avatar2.webp"
                 ],
                 rating: 5,
                 label: t("5 STARS • ELITE COMMUNITY", "5 ÉTOILES • COMMUNAUTÉ ÉLITE")
@@ -50,12 +50,12 @@ export default function Services() {
             services: [
                 {
                     title: t("Success mentorship", "Mentorat de réussite"),
-                    image: "/media/services/leadership_mentorship.png",
+                    image: "/media/services/leadership_mentorship.webp",
                     linkText: t("Get coached", "Se faire coacher")
                 },
                 {
                     title: t("Relationship marketing", "Marketing relationnel"),
-                    image: "/media/services/marketing_community.png",
+                    image: "/media/services/marketing_community.webp",
                     linkText: t("Join the network", "Rejoindre le réseau")
                 }
             ],
@@ -73,12 +73,12 @@ export default function Services() {
             services: [
                 {
                     title: t("Freedom & stability", "Liberté & stabilité"),
-                    image: "/media/services/financial_stability.png",
+                    image: "/media/services/financial_stability.webp",
                     linkText: t("Freedom plan", "Plan de liberté")
                 },
                 {
                     title: t("Growth tools", "Outils de croissance"),
-                    image: "/media/services/digital_innovation.png",
+                    image: "/media/services/digital_innovation.webp",
                     linkText: t("Digital tools", "Outils digitaux")
                 }
             ],

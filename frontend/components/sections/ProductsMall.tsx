@@ -10,22 +10,25 @@ export default function ProductsMall() {
 
     const FEATURED_PRODUCTS = [
         {
-            title: "Detox Health",
-            category: t("Vitality & Detox", "Vitalité & Détox"),
-            image: "/media/2025/01/detox-health30.jpg",
-            price: t("Mall Exclusive", "Exclusivité Mall")
+            id: 1,
+            name: "Detox Health",
+            price: "$49.99",
+            image: "/media/2025/01/detox-health30.webp",
+            category: "Health"
         },
         {
-            title: "Diabo Care",
-            category: t("Internal Balance", "Équilibre Interne"),
-            image: "/media/2025/01/diabo-care.jpg",
-            price: t("New Arrival", "Nouveauté")
+            id: 2,
+            name: "Diabo Care",
+            price: "$39.99",
+            image: "/media/2025/01/diabo-care.webp",
+            category: "Wellness"
         },
         {
-            title: "Immuno Boost",
-            category: t("Natural Defenses", "Défenses Naturelles"),
-            image: "/media/2025/01/immuno-boost30cap.jpg",
-            price: t("Premium", "Premium")
+            id: 3,
+            name: "Immuno Boost",
+            price: "$29.99",
+            image: "/media/2025/01/immuno-boost30cap.webp",
+            category: t("Natural Defenses", "Défenses Naturelles")
         }
     ];
 
@@ -138,7 +141,7 @@ export default function ProductsMall() {
                                         <div className="flex -space-x-4 self-end md:self-center">
                                             {[1, 2, 3, 4].map(i => (
                                                 <div key={i} className="relative h-14 w-14 rounded-full border-4 border-white bg-gray-200 overflow-hidden shadow-lg">
-                                                    <Image src={`/media/2022/12/h8-team${i % 3 + 1}.jpg`} alt="User" fill className="object-cover" sizes="56px" />
+                                                    <Image src={`/media/2022/12/h8-team${i % 3 + 1}.webp`} alt="User" fill className="object-cover" sizes="56px" />
                                                 </div>
                                             ))}
                                             <div className="h-14 w-14 rounded-full border-4 border-white bg-brand-violet flex items-center justify-center text-xs font-black text-white shadow-lg">

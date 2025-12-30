@@ -4,12 +4,12 @@ import React from 'react';
 import Image from 'next/image';
 
 const PARTNERS = [
-    { name: 'Detox Health', logo: '/media/2025/01/1Y.jpg', label: 'DETOX HEALTH' },
-    { name: 'Diabo Care', logo: '/media/2025/01/2Y.jpg', label: 'DIABO CARE' },
-    { name: 'Immuno Boost', logo: '/media/2025/01/3Y.jpg', label: 'IMMUNO BOOST' },
-    { name: 'Women Care', logo: '/media/2025/01/4Y.jpg', label: 'WOMEN CARE' },
-    { name: 'Men Power Malt', logo: '/media/2025/01/5Y.jpg', label: 'MEN POWER MALT' },
-    { name: 'Sea Buckthorn juice', logo: '/media/2025/01/6Y.jpg', label: 'SEA BUCKTHORN JUICE' },
+    { name: 'Detox Health', logo: '/media/2025/01/1Y.webp', label: 'DETOX HEALTH' },
+    { name: 'Diabo Care', logo: '/media/2025/01/2Y.webp', label: 'DIABO CARE' },
+    { name: 'Immuno Boost', logo: '/media/2025/01/3Y.webp', label: 'IMMUNO BOOST' },
+    { name: 'Women Care', logo: '/media/2025/01/4Y.webp', label: 'WOMEN CARE' },
+    { name: 'Men Power Malt', logo: '/media/2025/01/5Y.webp', label: 'MEN POWER MALT' },
+    { name: 'Sea Buckthorn juice', logo: '/media/2025/01/6Y.webp', label: 'SEA BUCKTHORN JUICE' },
 ];
 
 export default function Partners() {

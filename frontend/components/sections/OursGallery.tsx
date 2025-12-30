@@ -4,16 +4,16 @@ import CircularGallery from '../ui/CircularGallery';
 
 export default function OursGallery() {
     const galleryItems = [
-        { image: '/media/2025/01/july2024-02-PGOofMud.jpeg' },
-        { image: '/media/2025/01/july2024-03-24okcBCv.jpeg' },
-        { image: '/media/2025/01/july2024-04-775BDaue.jpeg' },
-        { image: '/media/2025/01/image21-9HJ9KFIh.jpg' },
-        { image: '/media/2025/01/image33-I1V2VqG3.jpg' },
-        { image: '/media/2025/01/image32-9frtmXDk.jpg' },
-        { image: '/media/2025/01/image23-sKySXPtg.jpg' },
-        { image: '/media/2025/01/image13-ANgvyuWu.jpg' },
-        { image: '/media/2025/01/image14-W3Uq9vkH.jpg' },
-        { image: '/media/2025/01/image12-YF5QFcgY.jpg' },
+        { image: '/media/2025/01/july2024-02-PGOofMud.webp' },
+        { image: '/media/2025/01/july2024-03-24okcBCv.webp' },
+        { image: '/media/2025/01/july2024-04-775BDaue.webp' },
+        { image: '/media/2025/01/image21-9HJ9KFIh.webp' },
+        { image: '/media/2025/01/image33-I1V2VqG3.webp' },
+        { image: '/media/2025/01/image32-9frtmXDk.webp' },
+        { image: '/media/2025/01/image23-sKySXPtg.webp' },
+        { image: '/media/2025/01/image13-ANgvyuWu.webp' },
+        { image: '/media/2025/01/image14-W3Uq9vkH.webp' },
+        { image: '/media/2025/01/image12-YF5QFcgY.webp' },
     ];
 
     return (

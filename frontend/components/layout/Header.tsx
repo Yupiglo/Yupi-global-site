@@ -31,7 +31,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <NextImage
-              src="/logos/yupi-blanc.png"
+              src="/logos/yupi-blanc.webp"
               alt="Yupi Global"
               width={120}
               height={40}

@@ -12,7 +12,7 @@ export default function Portfolio() {
             title: t("Coastal health excellence mission.", "Mission excellence santé littoral."),
             category: t("Humanitarian action.", "Action humanitaire."),
             description: t("Deployment of a mobile care infrastructure for remote areas of the Beninese coast.", "Déploiement d'une infrastructure de soin mobile pour les zones reculées du littoral béninois."),
-            image: "/media/2025/08/DSC_2321.jpg",
+            image: "/media/2025/08/DSC_2321.webp",
             className: "md:col-span-2 md:row-span-2",
             href: "/portfolio/excellence-littoral"
         },
@@ -20,7 +20,7 @@ export default function Portfolio() {
             title: t("Wellness innovation summit.", "Sommet innovation wellness."),
             category: t("Event.", "Événement."),
             description: t("Sharing expertise on new preventive care approaches during the Pan-African forum.", "Partage d'expertise sur les nouvelles approches de soins préventifs lors du forum panafricain."),
-            image: "/media/2025/08/DSC_2290.jpg",
+            image: "/media/2025/08/DSC_2290.webp",
             className: "md:col-span-1 md:row-span-1",
             href: "/portfolio/innovation-wellness"
         },
