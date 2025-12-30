@@ -58,7 +58,7 @@ export default function ServicesPage() {
             <Reveal direction="left" width="100%" className="order-1 lg:order-2">
               <div className="relative h-[400px] lg:h-[700px] rounded-[2.5rem] overflow-hidden shadow-3xl shadow-brand-violet/10">
                 <Image
-                  src="/media/services/health_premium.png"
+                  src="/media/services/health_premium.webp"
                   alt="Consultation Santé"
                   className="object-cover transition-transform duration-1000 hover:scale-105"
                   fill
@@ -97,7 +97,7 @@ export default function ServicesPage() {
                   <div className="p-10 rounded-3xl bg-gray-50 border border-gray-100 h-full transition-all hover:shadow-xl hover:shadow-brand-violet/5 group">
                     <h3 className="text-lg font-black text-gray-900 mb-6 group-hover:text-brand-violet transition-colors">{t("Pure science.", "Science pure.")}</h3>
                     <div className="h-16 w-16 rounded-full border-4 border-white bg-gray-200 overflow-hidden shadow-lg relative mb-6">
-                      <Image src="/media/services/avatar1.png" alt="Leader" className="object-cover" fill sizes="64px" />
+                      <Image src="/media/services/avatar1.webp" alt="Leader" className="object-cover" fill sizes="64px" />
                     </div>
                     <p className="text-sm text-gray-500 font-medium leading-relaxed">{t("Constant innovation based on the thousand-year treasures of Ayurveda.", "Une innovation constante basée sur les trésors millénaires de l'ayurvéda.")}</p>
                   </div>
@@ -106,7 +106,7 @@ export default function ServicesPage() {
                   <div className="p-10 rounded-3xl bg-gray-50 border border-gray-100 h-full transition-all hover:shadow-xl hover:shadow-brand-cyan/5 group">
                     <h3 className="text-lg font-black text-gray-900 mb-6 group-hover:text-brand-cyan transition-colors">{t("Natural essence.", "Essence naturelle.")}</h3>
                     <div className="h-16 w-16 rounded-full border-4 border-white bg-gray-200 overflow-hidden shadow-lg relative mb-6">
-                      <Image src="/media/services/avatar2.png" alt="Leader" className="object-cover" fill sizes="64px" />
+                      <Image src="/media/services/avatar2.webp" alt="Leader" className="object-cover" fill sizes="64px" />
                     </div>
                     <p className="text-sm text-gray-500 font-medium leading-relaxed">{t("Pure plant extracts and organic solutions coming directly from our earth.", "Des extraits végétaux purs et des solutions organiques issues directement de notre terre.")}</p>
                   </div>
