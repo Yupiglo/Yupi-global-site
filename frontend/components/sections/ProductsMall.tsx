@@ -72,7 +72,7 @@ export default function ProductsMall() {
                                 <div className="relative aspect-[4/5] overflow-hidden rounded-2xl mb-10">
                                     <Image
                                         src={product.image}
-                                        alt={product.title}
+                                        alt={product.name}
                                         className="object-cover grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-1000"
                                         fill
                                         sizes="(max-width: 1024px) 100vw, 33vw"
