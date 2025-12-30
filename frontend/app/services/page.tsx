@@ -154,7 +154,7 @@ export default function ServicesPage() {
             {/* 1. Produits Premium */}
             <Reveal fullHeight width="100%" className="md:col-span-2 md:row-span-2">
               <div className="group relative overflow-hidden rounded-[2.5rem] bg-white shadow-2xl h-full border border-gray-100">
-                <Image src="/media/2025/01/alka-plus22.jpg" alt="Produits Premium" className="absolute inset-0 w-full h-full object-cover grayscale-[0.5] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 66vw" />
+                <Image src="/media/2025/01/alka-plus22.webp" alt="Produits Premium" className="absolute inset-0 w-full h-full object-cover grayscale-[0.5] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 66vw" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 p-12 w-full">
                   <span className="inline-block px-4 py-1 rounded-full bg-brand-violet/20 border border-brand-violet/30 text-brand-violet text-[10px] font-black uppercase tracking-widest mb-4">{t("Product Excellence", "Excellence produit")}</span>
@@ -197,7 +197,7 @@ export default function ServicesPage() {
             {/* 4. Leadership & Formation */}
             <Reveal delay={0.5} fullHeight width="100%" className="md:row-span-2">
               <div className="group relative overflow-hidden rounded-[2.5rem] bg-dark-bg shadow-2xl h-full border border-white/5">
-                <Image src="/media/2021/11/h3-team1.jpg" alt="Leadership" className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw" />
+                <Image src="/media/2021/11/h3-team1.webp" alt="Leadership" className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw" />
                 <div className="absolute inset-0 p-10 flex flex-col justify-end bg-gradient-to-t from-black via-transparent to-transparent">
                   <span className="text-brand-cyan text-[10px] font-black uppercase tracking-widest mb-4 inline-block">{t("Leader Support", "Accompagnement Leader")}</span>
                   <h3 className="text-3xl font-black text-white">{t("Success mentorship.", "Mentorat de réussite.")}</h3>
@@ -212,7 +212,7 @@ export default function ServicesPage() {
             {/* 5. Écosystème Digital */}
             <Reveal delay={0.6} fullHeight width="100%">
               <div className="group relative overflow-hidden rounded-[2.5rem] bg-white shadow-2xl h-full border border-gray-100">
-                <Image src="/media/2025/01/Untitled-design-24.png" alt="Outils Digitaux" className="absolute inset-0 w-full h-full object-cover opacity-20 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-1000" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw" />
+                <Image src="/media/2025/01/Untitled-design-24.webp" alt="Outils Digitaux" className="absolute inset-0 w-full h-full object-cover opacity-20 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-1000" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw" />
                 <div className="absolute inset-0 p-10 flex flex-col justify-between">
                   <div className="h-14 w-14 bg-brand-violet/10 rounded-2xl flex items-center justify-center">
                     <svg className="w-7 h-7 text-brand-violet" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
