@@ -440,7 +440,7 @@ export default function AboutPage() {
 
               <div className="relative z-10 aspect-[4/5] rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
                 <Image
-                  src="/media/2025/12/WhatsApp-Image-2025-12-02-at-11.15.38-AM.jpeg"
+                  src="/media/2025/12/WhatsApp-Image-2025-12-02-at-11.15.38-AM.webp"
                   alt="Lawson Kelvin Late"
                   className="object-cover transition-all duration-1000 group-hover:scale-105"
                   fill
