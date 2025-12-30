@@ -1,0 +1,7 @@
+# robots.txt pour Yupi Global
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://yupiglobal.net/sitemap.xml
+

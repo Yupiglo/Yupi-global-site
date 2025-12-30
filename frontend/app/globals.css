@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-figtree), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-mono: var(--font-geist-mono);
+  --color-brand-violet: #7C3AED;
+  --color-brand-cyan: var(--brand-cyan);
+  --color-dark-bg: var(--dark-bg);
+  --color-light-text: var(--light-text);
+  --color-light-text-secondary: var(--light-text-secondary);
+}
+
+:root {
+  --background: #FFFFFF;
+  /* White Background */
+  --foreground: #111827;
+  /* Dark Text */
+  /* Gray 900 */
+
+  /* Brand Colors */
+  --brand-violet-val: #7C3AED;
+  --brand-cyan: #00BCD4;
+
+  /* Semantic Colors */
+  --dark-bg: #111827;
+  --light-text: #FFFFFF;
+  --light-text-secondary: #D1D5DB;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+/* Utility classes mapping */
+.bg-primary {
+  background-color: var(--brand-violet);
+}
+
+.text-primary {
+  color: var(--brand-violet);
+}
+
+.border-primary {
+  border-color: var(--brand-violet);
+}
