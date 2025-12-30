@@ -467,13 +467,13 @@ export default function AboutPage() {
                 {
                   name: "Mr Sanchit Gupta",
                   role: t("Managing Director & CEO", "Directeur Général & CEO"),
-                  image: "/media/2025/01/q-a.webp",
+                  image: "/media/2025/01/q-a.jpg",
                   desc: t("Visionary leader with two decades of experience, propelling Yupi Global towards innovation.", "Leader visionnaire avec deux décennies d'expérience, propulsant Yupi Global vers l'innovation.")
                 },
                 {
                   name: "Mr Prem Gazra",
                   role: t("Marketing Director", "Directeur Marketing"),
-                  image: "/media/2025/01/234.webp",
+                  image: "/media/2025/01/234.jpg",
                   desc: t("Marketing expert, creator of impact strategies to elevate the brand to new heights.", "Expert en marketing, créateur de stratégies d'impact pour élever la marque vers de nouveaux sommets.")
                 },
                 {
