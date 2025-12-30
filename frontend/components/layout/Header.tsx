@@ -103,8 +103,8 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile Menu Overlay - Deep Cinematic Background */}
-      <div className={`fixed inset-0 bg-black/95 z-[55] transition-all duration-500 lg:hidden flex flex-col pt-32 px-6 ${isMobileMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-[20px] pointer-events-none'
+      {/* Mobile Menu Overlay - Blue Slide Down */}
+      <div className={`fixed inset-0 bg-[#0f172a] z-[55] transition-all duration-500 lg:hidden flex flex-col pt-32 px-6 ${isMobileMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full pointer-events-none'
         }`}>
         {/* Background Gradients */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
