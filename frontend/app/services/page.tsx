@@ -171,7 +171,7 @@ export default function ServicesPage() {
             {/* 2. Marketing Relationnel */}
             <Reveal delay={0.2} fullHeight width="100%">
               <div className="group relative overflow-hidden rounded-[2.5rem] bg-white shadow-2xl h-full border border-gray-100">
-                <Image src="/media/2025/01/happy-business-team-greeting-someone-meeting.jpg" alt="Marketing Relationnel" className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:scale-105 transition-all duration-1000" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw" />
+                <Image src="/media/2025/01/happy-business-team-greeting-someone-meeting.webp" alt="Marketing Relationnel" className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:scale-105 transition-all duration-1000" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw" />
                 <div className="absolute inset-0 bg-brand-violet/40 mix-blend-multiply opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                 <div className="absolute inset-0 p-10 flex flex-col justify-end">
                   <h3 className="text-2xl font-black text-white transition-colors">{t("Relational marketing.", "Marketing relationnel.")}</h3>

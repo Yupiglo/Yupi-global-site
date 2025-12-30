@@ -96,7 +96,7 @@ export default function AboutPage() {
             <div className="relative order-1 lg:order-2">
               <div className="relative z-10 rounded-2xl overflow-hidden shadow-[0_40px_100px_-20px_rgba(0,0,0,0.2)] aspect-video">
                 <Image
-                  src="/media/2025/01/happy-business-team-greeting-someone-meeting.jpg"
+                  src="/media/2025/01/happy-business-team-greeting-someone-meeting.webp"
                   alt="L&apos;équipe Yupi Global"
                   className="object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-1000"
                   fill
@@ -110,7 +110,7 @@ export default function AboutPage() {
               {/* Floating detail image */}
               <div className="absolute -bottom-16 -right-8 w-48 h-48 rounded-2xl overflow-hidden shadow-2xl z-20 hidden md:block border-4 border-white">
                 <Image
-                  src="/media/2025/01/serious-coworkers-discussing-reports-outdoor-cafe.jpg"
+                  src="/media/2025/01/serious-coworkers-discussing-reports-outdoor-cafe.webp"
                   alt="Collaboration Yupi"
                   className="object-cover"
                   fill
@@ -467,19 +467,19 @@ export default function AboutPage() {
                 {
                   name: "Mr Sanchit Gupta",
                   role: t("Managing Director & CEO", "Directeur Général & CEO"),
-                  image: "/media/2025/01/q-a.jpg",
+                  image: "/media/2025/01/q-a.webp",
                   desc: t("Visionary leader with two decades of experience, propelling Yupi Global towards innovation.", "Leader visionnaire avec deux décennies d'expérience, propulsant Yupi Global vers l'innovation.")
                 },
                 {
                   name: "Mr Prem Gazra",
                   role: t("Marketing Director", "Directeur Marketing"),
-                  image: "/media/2025/01/234.jpg",
+                  image: "/media/2025/01/234.webp",
                   desc: t("Marketing expert, creator of impact strategies to elevate the brand to new heights.", "Expert en marketing, créateur de stratégies d'impact pour élever la marque vers de nouveaux sommets.")
                 },
                 {
                   name: "Tarun Vashisht",
                   role: t("IT Manager", "Responsable IT"),
-                  image: "/media/2025/01/Capture.png",
+                  image: "/media/2025/01/Capture.webp",
                   desc: t("Leads a team of passionate developers and designers for technological excellence.", "Dirige une équipe de développeurs et designers passionnés pour l'excellence technologique.")
                 }
               ].map((member, index) => (
