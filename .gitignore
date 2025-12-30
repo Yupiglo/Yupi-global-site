@@ -45,7 +45,7 @@ coverage/
 
 # Médias (trop volumineux pour Git - 2.5GB)
 # Utiliser Git LFS si vous devez les versionner
-frontend/public/media/
+# frontend/public/media/
 admin/public/media/
 
 # Subprojects removed from this repo
