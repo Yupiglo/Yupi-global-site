@@ -90,7 +90,7 @@ export default function ProductsMall() {
                                     <div>
                                         <p className="text-xs font-black uppercase tracking-[0.4em] text-brand-violet mb-3">{product.category}</p>
                                         <h4 className="text-2xl font-black text-gray-900 leading-tight group-hover:text-brand-violet transition-colors">
-                                            {product.title}
+                                            {product.name}
                                         </h4>
                                     </div>
 
