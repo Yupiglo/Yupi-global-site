@@ -232,8 +232,12 @@ class Media {
         }
         this.scale = this.screen.height / 1500;
         this.padding = 0.8;
-        // Calculate width to show approximately 4 items
-        this.plane.scale.x = (this.viewport.width / 4) - this.padding;
+
+        // Responsive item count: 4 on desktop, 1.75 on mobile for better visibility
+        const isMobile = this.screen.width < 768;
+        const itemsPerView = isMobile ? 1.75 : 4;
+
+        this.plane.scale.x = (this.viewport.width / itemsPerView) - this.padding;
         this.plane.scale.y = this.plane.scale.x * 1.25; // Maintain a vertical aspect ratio
 
         this.plane.program.uniforms.uPlaneSizes.value = [this.plane.scale.x, this.plane.scale.y];
