@@ -90,21 +90,21 @@ export default function Header() {
 
           {/* Mobile Menu Button - Premium Style */}
           <button
-            className="lg:hidden relative z-50 p-1 group"
+            className="lg:hidden relative z-[60] p-1 group"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
-            <div className={`h-12 w-12 rounded-full flex flex-col items-center justify-center gap-1.5 transition-all duration-300 border ${isMobileMenuOpen ? 'bg-white text-dark-bg border-white' : 'bg-white/10 backdrop-blur-md border-white/20 text-white hover:bg-brand-violet hover:border-brand-violet'}`}>
-              <span className={`h-0.5 w-6 rounded-full transition-all duration-300 ${isMobileMenuOpen ? 'bg-dark-bg rotate-45 translate-y-2' : 'bg-current'}`} />
-              <span className={`h-0.5 w-4 rounded-full transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0' : 'bg-current group-hover:w-6'}`} />
-              <span className={`h-0.5 w-6 rounded-full transition-all duration-300 ${isMobileMenuOpen ? 'bg-dark-bg -rotate-45 -translate-y-2' : 'bg-current'}`} />
+            <div className={`h-12 w-12 rounded-full flex flex-col items-center justify-center gap-1.5 transition-all duration-300 border backdrop-blur-md ${isMobileMenuOpen ? 'bg-brand-violet/20 border-brand-violet/50' : 'bg-white/10 border-white/20 hover:bg-brand-violet hover:border-brand-violet'}`}>
+              <span className={`h-0.5 w-6 rounded-full bg-white transition-all duration-300 ${isMobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`} />
+              <span className={`h-0.5 w-4 rounded-full bg-white transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0' : 'group-hover:w-6'}`} />
+              <span className={`h-0.5 w-6 rounded-full bg-white transition-all duration-300 ${isMobileMenuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
             </div>
           </button>
         </div>
       </div>
 
       {/* Mobile Menu Overlay - Deep Cinematic Background */}
-      <div className={`fixed inset-0 bg-[#0B0F19]/98 backdrop-blur-xl z-40 transition-all duration-500 lg:hidden flex flex-col pt-32 px-6 ${isMobileMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-[20px] pointer-events-none'
+      <div className={`fixed inset-0 bg-black/95 z-[55] transition-all duration-500 lg:hidden flex flex-col pt-32 px-6 ${isMobileMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-[20px] pointer-events-none'
         }`}>
         {/* Background Gradients */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
