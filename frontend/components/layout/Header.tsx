@@ -88,16 +88,16 @@ export default function Header() {
             </Link>
           </div>
 
-          {/* Mobile Menu Button - Premium Style */}
+          {/* Mobile Menu Button - Soft & Minimal */}
           <button
-            className="lg:hidden relative z-[60] p-1 group"
+            className="lg:hidden relative z-[60] p-2 group"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
-            <div className={`h-12 w-12 rounded-full flex flex-col items-center justify-center gap-1.5 transition-all duration-300 border backdrop-blur-md ${isMobileMenuOpen ? 'bg-brand-violet/20 border-brand-violet/50' : 'bg-white/10 border-white/20 hover:bg-brand-violet hover:border-brand-violet'}`}>
-              <span className={`h-0.5 w-6 rounded-full bg-white transition-all duration-300 ${isMobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`} />
-              <span className={`h-0.5 w-4 rounded-full bg-white transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0' : 'group-hover:w-6'}`} />
-              <span className={`h-0.5 w-6 rounded-full bg-white transition-all duration-300 ${isMobileMenuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
+            <div className="w-8 h-8 flex flex-col justify-center gap-1.5 transition-all duration-300">
+              <span className={`h-[2px] w-full bg-white rounded-full transition-all duration-300 ${isMobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`} />
+              <span className={`h-[2px] w-full bg-white rounded-full transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0' : 'w-2/3 ml-auto'}`} />
+              <span className={`h-[2px] w-full bg-white rounded-full transition-all duration-300 ${isMobileMenuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
             </div>
           </button>
         </div>
