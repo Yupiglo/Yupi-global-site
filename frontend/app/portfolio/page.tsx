@@ -169,18 +169,18 @@ export default function PortfolioPage() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              "/media/2025/08/20250125_190015.jpg",
-              "/media/2025/08/20250126_185603.jpg",
-              "/media/2025/08/20250126_191047.jpg",
-              "/media/2025/08/DSC_2236.jpg",
-              "/media/2025/08/DSC_2246.jpg",
-              "/media/2025/08/20250125_185632.jpg",
-              "/media/2025/08/DSC_2322.jpg",
-              "/media/2025/08/DSC_2299.jpg",
-              "/media/2025/08/20250126_185719.jpg",
-              "/media/2025/08/20250126_183823.jpg",
-              "/media/2025/08/20250125_182707.jpg",
-              "/media/2025/08/DSC_2302.jpg"
+              "/media/2025/08/20250125_190015.webp",
+              "/media/2025/08/20250126_185603.webp",
+              "/media/2025/08/20250126_191047.webp",
+              "/media/2025/08/DSC_2236.webp",
+              "/media/2025/08/DSC_2246.webp",
+              "/media/2025/08/20250125_185632.webp",
+              "/media/2025/08/DSC_2322.webp",
+              "/media/2025/08/DSC_2299.webp",
+              "/media/2025/08/20250126_185719.webp",
+              "/media/2025/08/20250126_183823.webp",
+              "/media/2025/08/20250125_182707.webp",
+              "/media/2025/08/DSC_2302.webp"
             ].map((img, idx) => (
               <div key={idx} className="aspect-square rounded-2xl overflow-hidden group shadow-lg relative">
                 <Image src={img} alt="Gallery item" className="object-cover grayscale-[0.5] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-1000 cursor-pointer" fill sizes="25vw" />
