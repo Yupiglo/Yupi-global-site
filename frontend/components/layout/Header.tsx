@@ -24,9 +24,10 @@ export default function Header() {
   return (
     <>
       <header
-        className={`sticky top-0 z-50 transition-all duration-300 ease-in-out ${isScrolled || isMobileMenuOpen
-          ? 'bg-dark-bg/90 backdrop-blur-md shadow-lg'
-          : 'bg-dark-bg'
+        className={`sticky top-0 transition-all duration-300 ease-in-out ${isMobileMenuOpen ? 'z-[70]' : 'z-50'
+          } ${isScrolled || isMobileMenuOpen
+            ? 'bg-dark-bg/90 backdrop-blur-md shadow-lg'
+            : 'bg-dark-bg'
           }`}
       >
         <div className="container mx-auto px-4 md:px-6">

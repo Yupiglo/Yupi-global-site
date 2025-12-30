@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
-import { ChevronDown, X } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 
 interface MobileMenuProps {
     isOpen: boolean;
@@ -52,15 +52,6 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-violet/10 blur-[120px] rounded-full mix-blend-screen" />
                 <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-brand-cyan/10 blur-[100px] rounded-full mix-blend-screen" />
             </div>
-
-            {/* Close Button (X) */}
-            <button
-                onClick={onClose}
-                className="absolute top-6 right-6 z-20 p-2 text-white/50 hover:text-white transition-colors"
-                aria-label="Close menu"
-            >
-                <X className="w-8 h-8" />
-            </button>
 
             <nav className="flex flex-col gap-6 text-center relative z-10 py-10">
                 <Link
