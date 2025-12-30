@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
     title: 'Blog & Savoirs - Yupi Global',
@@ -34,30 +35,86 @@ export default function BlogArticlesPage() {
 
                 {/* Articles Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                    {[1, 2, 3, 4, 5, 6].map((article) => (
+                    {[
+                        {
+                            id: 1,
+                            title: "Les Secrets de l'Artemisia : Une Révolution Bio",
+                            excerpt: "Comment Yupi Global réinvente l'usage des plantes médicinales africaines grâce à la biotechnologie moléculaire.",
+                            category: "Éveil Santé",
+                            image: "/media/2025/08/DSC_2323.webp",
+                            date: "12 Décembre 2025"
+                        },
+                        {
+                            id: 2,
+                            title: "L'Entreprenariat Féminin en Afrique",
+                            excerpt: "Portrait de femmes leaders qui transforment l'économie locale grâce au modèle Yupi.",
+                            category: "Business",
+                            image: "/media/2025/08/DSC_2324.webp",
+                            date: "08 Décembre 2025"
+                        },
+                        {
+                            id: 3,
+                            title: "Détox Cellulaire : Le Guide Complet",
+                            excerpt: "Pourquoi la purification est la première étape vers une santé durable et une énergie retrouvée.",
+                            category: "Bien-être",
+                            image: "/media/2025/08/DSC_2325.webp",
+                            date: "01 Décembre 2025"
+                        },
+                        {
+                            id: 4,
+                            title: "Innovation : L'IA au service de la Santé",
+                            excerpt: "Découvrez comment nos nouveaux outils digitaux personnalisent votre parcours de bien-être.",
+                            category: "Tech",
+                            image: "/media/2025/08/DSC_2327.webp",
+                            date: "28 Novembre 2025"
+                        },
+                        {
+                            id: 5,
+                            title: "Le Pouvoir du Marketing Relationnel",
+                            excerpt: "Au-delà de la vente : construire une communauté soudée et bienveillante.",
+                            category: "Communauté",
+                            image: "/media/2025/08/DSC_2328.webp",
+                            date: "20 Novembre 2025"
+                        },
+                        {
+                            id: 6,
+                            title: "Nutraceutiques : L'Avenir de la Prévention",
+                            excerpt: "Comprendre l'impact des compléments alimentaires de haute qualité sur la longévité.",
+                            category: "Science",
+                            image: "/media/2025/08/DSC_2329.webp",
+                            date: "15 Novembre 2025"
+                        }
+                    ].map((article) => (
                         <article
-                            key={article}
+                            key={article.id}
                             className="group relative bg-white/5 border border-white/10 rounded-2xl p-8 lg:p-10 transition-all duration-700 hover:bg-white/10 hover:-translate-y-4"
                         >
                             <div className="aspect-video bg-gray-900 rounded-2xl overflow-hidden mb-10 relative">
+                                <Image
+                                    src={article.image}
+                                    alt={article.title}
+                                    className="object-cover transition-transform duration-1000 group-hover:scale-110 opacity-80 group-hover:opacity-100"
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, 33vw"
+                                />
                                 <div className="absolute inset-0 bg-gradient-to-tr from-brand-violet/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                                 <div className="absolute top-6 left-6 px-4 py-1.5 rounded-full bg-brand-violet text-[10px] font-black uppercase tracking-widest text-white">
-                                    Éveil Santé
+                                    {article.category}
                                 </div>
                             </div>
                             <div className="space-y-6">
                                 <div className="text-[10px] font-black uppercase tracking-[0.3em] text-brand-cyan opacity-60">
-                                    {new Date().toLocaleDateString('fr-FR', { month: 'long', year: 'numeric' })}
+                                    {article.date}
                                 </div>
                                 <h3 className="text-2xl font-black text-white group-hover:text-brand-violet transition-colors leading-tight">
-                                    Les Secrets de l&apos;Artemisia : <br />Une Révolution Bio
+                                    {article.title}
                                 </h3>
                                 <p className="text-gray-400 font-medium leading-relaxed line-clamp-3">
-                                    Comment Yupi Global réinvente l&apos;usage des plantes médicinales africaines grâce à la biotechnologie moléculaire.
+                                    {article.excerpt}
                                 </p>
                                 <div className="pt-6">
                                     <Link
-                                        href={`/news/articles/article-${article}`}
+                                        href={`/news/articles/${article.id}`}
                                         className="inline-flex items-center gap-4 text-xs font-black uppercase tracking-widest text-white group/link hover:text-brand-violet transition-colors"
                                     >
                                         Lire la suite
