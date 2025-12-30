@@ -1,0 +1,137 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+// Pages
+model Page {
+  id              Int       @id @default(autoincrement())
+  title           String    @db.VarChar(255)
+  slug            String    @unique @db.VarChar(255)
+  content         String?   @db.Text
+  excerpt         String?   @db.Text
+  featuredImageId Int?
+  status          String    @default("draft") @db.VarChar(50)
+  createdAt       DateTime  @default(now()) @map("created_at")
+  updatedAt       DateTime  @updatedAt @map("updated_at")
+
+  featuredImage Media? @relation("PageFeaturedImage", fields: [featuredImageId], references: [id])
+
+  @@map("pages")
+}
+
+// Articles (Posts)
+model Post {
+  id              Int       @id @default(autoincrement())
+  title           String    @db.VarChar(255)
+  slug            String    @unique @db.VarChar(255)
+  content         String?   @db.Text
+  excerpt         String?   @db.Text
+  featuredImageId Int?
+  authorId        Int?
+  status          String    @default("draft") @db.VarChar(50)
+  publishedAt     DateTime? @map("published_at")
+  createdAt       DateTime  @default(now()) @map("created_at")
+  updatedAt       DateTime  @updatedAt @map("updated_at")
+
+  featuredImage Media?  @relation("PostFeaturedImage", fields: [featuredImageId], references: [id])
+  author        Admin?  @relation(fields: [authorId], references: [id])
+
+  @@map("posts")
+}
+
+// Portfolio
+model Portfolio {
+  id              Int       @id @default(autoincrement())
+  title           String    @db.VarChar(255)
+  slug            String    @unique @db.VarChar(255)
+  description     String?   @db.Text
+  featuredImageId Int?
+  category        String?   @db.VarChar(100)
+  status          String    @default("draft") @db.VarChar(50)
+  createdAt       DateTime  @default(now()) @map("created_at")
+  updatedAt       DateTime  @updatedAt @map("updated_at")
+
+  featuredImage Media? @relation("PortfolioFeaturedImage", fields: [featuredImageId], references: [id])
+
+  @@map("portfolio")
+}
+
+// Services
+model Service {
+  id              Int       @id @default(autoincrement())
+  title           String    @db.VarChar(255)
+  slug            String    @unique @db.VarChar(255)
+  description     String?   @db.Text
+  icon            String?   @db.VarChar(100)
+  featuredImageId Int?
+  status          String    @default("draft") @db.VarChar(50)
+  createdAt       DateTime  @default(now()) @map("created_at")
+  updatedAt       DateTime  @updatedAt @map("updated_at")
+
+  featuredImage Media? @relation("ServiceFeaturedImage", fields: [featuredImageId], references: [id])
+
+  @@map("services")
+}
+
+// Médias
+model Media {
+  id              Int       @id @default(autoincrement())
+  filename        String    @db.VarChar(255)
+  originalFilename String?  @map("original_filename") @db.VarChar(255)
+  mimeType        String?   @map("mime_type") @db.VarChar(100)
+  size            Int?
+  url             String    @db.VarChar(500)
+  altText         String?   @map("alt_text") @db.VarChar(255)
+  createdAt       DateTime  @default(now()) @map("created_at")
+
+  // Relations
+  pagesAsFeatured    Page[]      @relation("PageFeaturedImage")
+  postsAsFeatured     Post[]      @relation("PostFeaturedImage")
+  portfolioAsFeatured Portfolio[] @relation("PortfolioFeaturedImage")
+  servicesAsFeatured  Service[]    @relation("ServiceFeaturedImage")
+
+  @@map("media")
+}
+
+// Membres (Adhésions)
+model Member {
+  id        Int       @id @default(autoincrement())
+  firstName String    @map("first_name") @db.VarChar(100)
+  lastName  String    @map("last_name") @db.VarChar(100)
+  email     String    @unique @db.VarChar(255)
+  phone     String?   @db.VarChar(50)
+  country   String?   @db.VarChar(100)
+  city      String?   @db.VarChar(100)
+  company   String?   @db.VarChar(255)
+  position  String?   @db.VarChar(100)
+  source    String?   @db.VarChar(100) // Comment il a connu Yupi
+  status    String    @default("pending") @db.VarChar(50)
+  createdAt DateTime  @default(now()) @map("created_at")
+  updatedAt DateTime  @updatedAt @map("updated_at")
+
+  @@map("members")
+}
+
+// Admins
+model Admin {
+  id           Int       @id @default(autoincrement())
+  username     String    @unique @db.VarChar(100)
+  email        String    @unique @db.VarChar(255)
+  passwordHash String    @map("password_hash") @db.VarChar(255)
+  role         String    @default("editor") @db.VarChar(50)
+  createdAt    DateTime  @default(now()) @map("created_at")
+  updatedAt    DateTime  @updatedAt @map("updated_at")
+
+  // Relations
+  posts Post[]
+
+  @@map("admins")
+}
