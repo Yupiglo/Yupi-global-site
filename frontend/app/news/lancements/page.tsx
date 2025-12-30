@@ -12,7 +12,7 @@ const LAUNCH_ITEMS = [
         title: "Nouvelle Gamme Ayurvédique : Yuvi Herbal",
         date: "Février 2025",
         description: "L&apos;aboutissement de 3 ans de recherche biotechnologique pour une purification cellulaire profonde.",
-        image: "/media/2025/07/YUVI-HERBAL-CAPSULE.png",
+        image: "/media/2025/07/YUVI-HERBAL-CAPSULE.webp",
         status: "Nouveau"
     },
     {
@@ -20,7 +20,7 @@ const LAUNCH_ITEMS = [
         title: "Alka Plus : L&apos;Eau Sublimée",
         date: "Janvier 2025",
         description: "Un système de filtration révolutionnaire pour une hydratation alcaline optimale au quotidien.",
-        image: "/media/2025/01/alka-plus22.jpg",
+        image: "/media/2025/01/alka-plus22.webp",
         status: "Disponible"
     },
     {
@@ -28,7 +28,7 @@ const LAUNCH_ITEMS = [
         title: "Plateforme Yupi Connect 2.0",
         date: "Décembre 2024",
         description: "De nouveaux outils digitaux pour piloter votre succès financier et suivre votre santé en temps réel.",
-        image: "/media/2025/01/Untitled-design-24.png",
+        image: "/media/2025/01/Untitled-design-24.webp",
         status: "Mise à jour"
     }
 ];

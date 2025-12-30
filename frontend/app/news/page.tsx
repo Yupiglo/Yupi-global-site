@@ -63,7 +63,7 @@ export default function NewsHubPage() {
               href="/news/lancements"
               className="group relative overflow-hidden rounded-2xl border border-white/10"
             >
-              <Image src="/media/2025/07/YUVI-HERBAL-CAPSULE.png" alt="Lancements" className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000" fill sizes="(max-width: 768px) 100vw, 33vw" />
+              <Image src="/media/2025/07/YUVI-HERBAL-CAPSULE.webp" alt="Lancements" className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000" fill sizes="(max-width: 768px) 100vw, 33vw" />
               <div className="absolute inset-0 bg-gradient-to-t from-dark-bg via-dark-bg/40 to-transparent" />
               <div className="absolute bottom-0 left-0 p-12">
                 <h3 className="text-3xl font-black text-white mb-4">Lancements</h3>
