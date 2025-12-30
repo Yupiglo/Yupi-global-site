@@ -344,7 +344,7 @@ export default function AboutPage() {
                   <div className="absolute -inset-4 bg-brand-violet/20 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
                   <div className="relative h-full w-full rounded-2xl overflow-hidden border border-gray-100 shadow-2xl">
                     <Image
-                      src="/media/2025/01/Untitled-design-20.png"
+                      src="/media/2025/01/Untitled-design-20.webp"
                       alt="Kelvin Laté Lawson Portrait"
                       className="object-cover transition-all duration-1000 group-hover:scale-105"
                       fill
@@ -358,7 +358,7 @@ export default function AboutPage() {
                 <Reveal delay={0.6} fullHeight width="100%" className="col-start-8 col-end-13 row-start-3 row-end-8 relative group z-30">
                   <div className="relative h-full w-full rounded-2xl overflow-hidden border-4 border-white shadow-2xl">
                     <Image
-                      src="/media/2025/12/WhatsApp-Image-2025-12-02-at-11.15.38-AM.jpeg"
+                      src="/media/2025/12/WhatsApp-Image-2025-12-02-at-11.15.38-AM.webp"
                       alt="Kelvin Laté Lawson"
                       className="object-cover transition-all duration-1000 group-hover:scale-110"
                       fill
@@ -372,7 +372,7 @@ export default function AboutPage() {
                   <div className="absolute -inset-4 bg-brand-violet/10 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
                   <div className="relative h-full w-full rounded-2xl overflow-hidden border border-gray-100 shadow-2xl">
                     <Image
-                      src="/media/2025/01/Untitled-design-24.png"
+                      src="/media/2025/01/Untitled-design-24.webp"
                       alt="Kelvin Laté Lawson Vision"
                       className="object-cover transition-all duration-1000 group-hover:scale-110"
                       fill
