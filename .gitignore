@@ -48,3 +48,7 @@ coverage/
 frontend/public/media/
 admin/public/media/
 
+# Subprojects removed from this repo
+admin/
+backend/
+
