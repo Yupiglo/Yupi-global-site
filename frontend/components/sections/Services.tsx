@@ -23,12 +23,12 @@ export default function Services() {
             services: [
                 {
                     title: t("Premium health", "Santé haut de gamme"),
-                    image: "/media/services/health_premium.png",
+                    image: "/media/services/health_premium.webp",
                     linkText: t("Learn more", "En savoir plus")
                 },
                 {
                     title: t("Business concierge", "Conciergerie business"),
-                    image: "/media/services/vip_concierge.png",
+                    image: "/media/services/vip_concierge.webp",
                     linkText: t("VIP services", "Services VIP")
                 }
             ],
