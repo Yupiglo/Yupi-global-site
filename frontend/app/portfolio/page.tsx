@@ -128,19 +128,19 @@ export default function PortfolioPage() {
                 title: "Prix de l'Innovation Sociale",
                 year: "2024",
                 org: "African Health Forum",
-                image: "/media/2025/08/DSC_2326.jpg"
+                image: "/media/2025/08/DSC_2326.webp"
               },
               {
                 title: "Meilleur Partenaire MLM",
                 year: "2024",
                 org: "Global Business Awards",
-                image: "/media/2025/08/DSC_2310.jpg"
+                image: "/media/2025/08/DSC_2310.webp"
               },
               {
                 title: "Excellence Ayurvédique",
                 year: "2023",
                 org: "International Wellness Institute",
-                image: "/media/2025/08/DSC_2330.jpg"
+                image: "/media/2025/08/DSC_2330.webp"
               }
             ].map((award, i) => (
               <div key={i} className="bg-white/5 border border-white/10 p-12 rounded-2xl group hover:bg-white/10 transition-all duration-700">
