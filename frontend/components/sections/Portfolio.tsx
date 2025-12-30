@@ -9,24 +9,27 @@ export default function Portfolio() {
 
     const PORTFOLIO_DATA = [
         {
-            title: t("Coastal health excellence mission.", "Mission excellence santé littoral."),
-            category: t("Humanitarian action.", "Action humanitaire."),
+            id: 1,
+            title: "Yupi Home & Decor",
+            category: "Luxury Living",
             description: t("Deployment of a mobile care infrastructure for remote areas of the Beninese coast.", "Déploiement d'une infrastructure de soin mobile pour les zones reculées du littoral béninois."),
-            image: "/media/2025/08/DSC_2321.webp",
+            image: "/media/2025/01/happy-business-team-greeting-someone-meeting.webp",
             className: "md:col-span-2 md:row-span-2",
-            href: "/portfolio/excellence-littoral"
+            href: "/portfolio/yupi-home-decor"
         },
         {
-            title: t("Wellness innovation summit.", "Sommet innovation wellness."),
-            category: t("Event.", "Événement."),
+            id: 2,
+            title: "Yupi Smart Life",
+            category: "Technology",
             description: t("Sharing expertise on new preventive care approaches during the Pan-African forum.", "Partage d'expertise sur les nouvelles approches de soins préventifs lors du forum panafricain."),
-            image: "/media/2025/08/DSC_2290.webp",
+            image: "/media/2025/01/AWARD-CEREMONY.webp",
             className: "md:col-span-1 md:row-span-1",
-            href: "/portfolio/innovation-wellness"
+            href: "/portfolio/yupi-smart-life"
         },
         {
-            title: t("Yupi medical alliance.", "Alliance médicale Yupi."),
-            category: t("Partnership.", "Partenariat."),
+            id: 3,
+            title: "Yupi Health",
+            category: "Wellness",
             description: t("Signing strategic agreements for access to high-quality biological medicines.", "Signature d'accords stratégiques pour l'accès aux médicaments biologiques de haute qualité."),
             image: "/media/2025/08/DSC_2310.jpg",
             className: "md:col-span-1 md:row-span-1",
