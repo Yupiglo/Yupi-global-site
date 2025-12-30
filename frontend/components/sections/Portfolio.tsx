@@ -31,7 +31,7 @@ export default function Portfolio() {
             title: "Yupi Health",
             category: "Wellness",
             description: t("Signing strategic agreements for access to high-quality biological medicines.", "Signature d'accords stratégiques pour l'accès aux médicaments biologiques de haute qualité."),
-            image: "/media/2025/08/DSC_2310.jpg",
+            image: "/media/2025/01/two-african-businessman-sitting-outside-cafe.webp",
             className: "md:col-span-1 md:row-span-1",
             href: "/portfolio/alliance-medicale"
         }
