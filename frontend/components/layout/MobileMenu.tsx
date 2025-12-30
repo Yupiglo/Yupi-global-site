@@ -44,7 +44,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
 
     return (
         <div
-            className={`fixed inset-0 bg-[#0f172a] z-[55] transition-all duration-500 lg:hidden flex flex-col pt-24 pb-8 px-6 overflow-y-auto ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full pointer-events-none'
+            className={`fixed top-0 left-0 w-full h-[100dvh] bg-[#0f172a] z-[60] transition-all duration-500 lg:hidden flex flex-col pt-24 pb-8 px-6 overflow-y-auto ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full pointer-events-none'
                 }`}
         >
             {/* Background Gradients */}
