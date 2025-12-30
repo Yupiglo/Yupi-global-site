@@ -257,7 +257,7 @@ export default function AboutPage() {
               <div className="absolute -inset-10 bg-brand-violet/5 rounded-full blur-[100px] z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
               <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl aspect-video">
                 <Image
-                  src="/media/2021/11/h3-gallery1-600x450.jpg"
+                  src="/media/2021/11/h3-gallery1-600x450.webp"
                   alt="Laboratoire Excellence"
                   className="object-cover grayscale-[0.3] group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-105"
                   fill
