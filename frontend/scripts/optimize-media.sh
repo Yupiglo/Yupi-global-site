@@ -1,8 +1,9 @@
 #!/bin/bash
 # Recommandé : installer 'webp' (sudo apt install webp)
 
-# Chemin vers le dossier media
-MEDIA_DIR="public/media"
+# Détection du dossier du script pour trouver public/media peu importe d'où on le lance
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+MEDIA_DIR="$SCRIPT_DIR/../public/media"
 
 if [ ! -d "$MEDIA_DIR" ]; then
   echo "Erreur : Le dossier $MEDIA_DIR n'existe pas."
