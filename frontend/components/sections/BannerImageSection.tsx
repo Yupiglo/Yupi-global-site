@@ -137,11 +137,11 @@ const BannerImageSection = () => {
     }, []);
 
     return (
-        <section className="banner-section py-20 overflow-hidden">
+        <section className="banner-section py-0 md:py-20 overflow-hidden">
             <div className="container mx-auto px-4">
                 <div className="banner-main-wrapper flex justify-center items-center w-full">
                     <div
-                        className="banner-image-wrap flex justify-center items-center w-full relative h-[500px] md:h-[700px] preserve-3d perspective-1000"
+                        className="banner-image-wrap flex justify-center items-center w-full relative h-[350px] md:h-[700px] preserve-3d perspective-1000"
                         style={{ perspectiveOrigin: '50% 90%' }} // Keep bottom perspective
                     >
                         <div className="images-wrapper relative w-full h-full flex justify-center items-center preserve-3d">
