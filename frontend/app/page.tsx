@@ -1,5 +1,4 @@
 import Hero from '@/components/sections/Hero';
-import HealthOptimization from '@/components/sections/HealthOptimization';
 import Services from '@/components/sections/Services';
 import ProductsMall from '@/components/sections/ProductsMall';
 import OursGallery from '@/components/sections/OursGallery';
@@ -13,7 +12,6 @@ export default function Home() {
   return (
     <div className="flex flex-col overflow-x-clip">
       <Hero />
-      <HealthOptimization />
       <Services />
       <ProductsMall />
       <OursGallery />

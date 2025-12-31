@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Reveal } from '@/components/ui/Reveal';
 import { useLanguage } from '@/context/LanguageContext';
+import HealthOptimization from '@/components/sections/HealthOptimization';
 
 export default function ServicesPage() {
   const { t } = useLanguage();
@@ -45,7 +46,10 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* 2. Philosophy Section (The Core) */}
+      {/* 2. Health Optimization Section */}
+      <HealthOptimization />
+
+      {/* 3. Philosophy Section (The Core) */}
       <section className="py-32 lg:py-56 bg-white overflow-hidden relative">
         {/* Subtle Background Elements */}
         <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.03]">
@@ -117,7 +121,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* 3. Expanded Bento Services Grid */}
+      {/* 4. Expanded Bento Services Grid */}
       <section className="relative py-32 lg:py-56 bg-white overflow-hidden">
         {/* Subtle Background Elements */}
         <div className="absolute inset-0 z-0 pointer-events-none opacity-40">
@@ -240,7 +244,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* 4. The Ritual Process Section */}
+      {/* 5. The Ritual Process Section */}
       <section className="py-32 lg:py-56 bg-white overflow-hidden relative">
         <div className="max-w-[1700px] mx-auto px-6 lg:px-16">
           <div className="text-center mb-32 space-y-8">
@@ -318,7 +322,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* 5. Final CTA Section */}
+      {/* 6. Final CTA Section */}
       <section className="relative py-32 lg:py-64 bg-dark-bg overflow-hidden text-center min-h-[60vh] flex items-center">
         {/* Deep Atmospheric Glows */}
         <div className="absolute inset-0 z-0 pointer-events-none">
