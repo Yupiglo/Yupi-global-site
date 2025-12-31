@@ -32,6 +32,24 @@
   --dark-bg: #111827;
   --light-text: #FFFFFF;
   --light-text-secondary: #D1D5DB;
+
+  /* User Provided Variables */
+  --_font---font-family: var(--font-instrument-sans), sans-serif;
+  --text-size: 1rem;
+  --h1: 3.75rem;
+  --h2: 3rem;
+  --h3: 2rem;
+  --h4: 1.75rem;
+  --h5: 1.375rem;
+  --h6: 1.25rem;
+  --section-size: 8.75rem;
+  --text-size-small: .875rem;
+  --_color---white: white;
+  --_color---primary-04: #17171785;
+  --_color---primary-01: #ff531f;
+  --_color---primary-03: whitesmoke;
+  --_color---black: black;
+  --_color---primary-02: #171717;
 }
 
 body {
@@ -51,4 +69,22 @@ body {
 
 .border-primary {
   border-color: var(--brand-violet);
+}
+
+@layer components {
+  .banner-layer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-style: preserve-3d;
+    will-change: transform;
+  }
+
+  .banner-img {
+    width: 45vw;
+    max-width: 520px;
+    height: auto;
+    border-radius: 1.5rem;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.45);
+  }
 }

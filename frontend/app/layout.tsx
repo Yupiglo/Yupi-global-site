@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Figtree } from "next/font/google";
+import { Figtree, Instrument_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -9,6 +9,12 @@ import { LanguageProvider } from "@/context/LanguageContext";
 const figtree = Figtree({
   subsets: ["latin"],
   variable: "--font-figtree",
+  display: "swap",
+});
+
+const instrumentSans = Instrument_Sans({
+  subsets: ["latin"],
+  variable: "--font-instrument-sans",
   display: "swap",
 });
 
@@ -26,8 +32,8 @@ export default function RootLayout({
     <LanguageProvider>
       <html lang="en">
         <body
-          className={`${figtree.variable} antialiased font-sans`}
-          style={{ fontFamily: 'var(--font-figtree), sans-serif' }}
+          className={`${figtree.variable} ${instrumentSans.variable} antialiased font-sans`}
+          style={{ fontFamily: 'var(--font-instrument-sans), sans-serif' }}
         >
           <Header />
           <main className="min-h-screen">

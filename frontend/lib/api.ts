@@ -161,3 +161,15 @@ export async function getMedia(id: number): Promise<Media> {
   return fetchAPI<Media>(`/media/${id}`);
 }
 
+// Settings / Banner
+export interface BannerImage {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+}
+
+export async function getBannerSettings(): Promise<BannerImage[]> {
+  return fetchAPI<BannerImage[]>('/settings/banner');
+}
+

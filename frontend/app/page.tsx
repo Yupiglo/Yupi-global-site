@@ -1,4 +1,5 @@
 import Hero from '@/components/sections/Hero';
+import BannerImageSection from '@/components/sections/BannerImageSection';
 import Services from '@/components/sections/Services';
 import ProductsMall from '@/components/sections/ProductsMall';
 import OursGallery from '@/components/sections/OursGallery';
@@ -12,6 +13,7 @@ export default function Home() {
   return (
     <div className="flex flex-col overflow-x-clip">
       <Hero />
+      <BannerImageSection />
       <Services />
       <ProductsMall />
       <OursGallery />
